@@ -6,7 +6,15 @@
     left: 32%;
     width: 350px;
     background-color: #130912;
-    padding: 50px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
+}
+
+.head {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'montserrat', cursive;
 }
 
 button {

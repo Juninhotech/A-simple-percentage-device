@@ -1,19 +1,3 @@
-// const parag = document.querySelectorAll('p');
-
-// class Fruits {
-//     fruit = 'oranges';
-//     nature = 'very sweetS';
-    
-//     constructor() {
-//         parag[0].textContent = this.fruit;
-//         parag[1].textContent = this.nature;
-//         console.log(this.fruit);
-//     }
-
-
-// }
-// new Fruits();
-
 const passForm = document.querySelector('form');
 const showResult = document.querySelector('#result');
 
@@ -33,7 +17,7 @@ passForm.addEventListener('submit', (peter) => {
 
             if ((this.totalVal))  {
                 showResult.textContent = `${this.formPass2}% of ${this.formPass} is ${this.totalVal}`; 
-                showResult.classList.add('resultan');  
+                showResult.classList.toggle('resultan');  
             };
                     
         };
