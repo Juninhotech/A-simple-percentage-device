@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lily+Script+One&family=Megrim&family=Modak&family=Montserrat:wght@700&family=Slackey&display=swap');
+
+.mainform {
+    position: absolute;
+    top: 27%;
+    left: 32%;
+    width: 350px;
+    background-color: #130912;
+    padding: 50px 20px 20px 20px;
+}
+
+button {
+    padding: 10px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+
+}
+
+
+.resultan {
+    animation-name: resulty;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes resulty {
+    0%{color: yellow;}
+    25%{color: rgb(189, 7, 113);}
+    75%{color: rgb(0, 175, 206);}
+}
+
+
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    color: red;
+    font-size: .9rem;
+    font-weight: 600;
+}
