@@ -9,16 +9,20 @@ passForm.addEventListener('submit', (peter) => {
         formPass = parseFloat(passForm.passInput.value);
         formPass2 = parseFloat(passForm.passInput2.value);
         totalVal = (this.formPass / 100 * this.formPass2).toLocaleString('en');
-        notCorrect = NaN;
 
         constructor() {
             this.formPass;
             this.totalVal;
+            this.formPass2
 
-            if ((this.totalVal))  {
-                showResult.textContent = `${this.formPass2}% of ${this.formPass} is ${this.totalVal}`; 
-                showResult.classList.toggle('resultan');  
+            showResult.textContent = `${this.formPass2}% of ${this.formPass} is ${this.totalVal}`; 
+            showResult.classList.toggle('resultan');  
+            
+            if (isNaN(this.formPass) || isNaN(this.formPass2))  {
+                showResult.textContent = 'input a valid character'; 
+
             };
+             
                     
         };
     }
